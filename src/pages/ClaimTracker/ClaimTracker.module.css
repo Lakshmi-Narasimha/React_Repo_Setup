@@ -1,0 +1,319 @@
+.sectionContent {
+  max-width: 108rem;
+  margin: 0 auto;
+  width: 87.5%;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: space-around;
+}
+
+.claimMain {
+  padding-top: 6.4rem;
+  max-width: 80rem;
+  flex: 3;
+}
+
+@media only screen and (--tablet-viewport) {
+  .claimMain {
+    flex-basis: 100%;
+  }
+}
+
+.claimProgress {
+  margin-left: 2.4rem;
+  flex: 2;
+}
+
+@media only screen and (--tablet-viewport) {
+  .claimProgress {
+    flex-basis: 100%;
+    margin: 0 0 4.8rem;
+  }
+}
+
+.headline {
+  font-size: var(--headlineFontSizeLarge);
+  line-height: var(--headlineLineHeightLarge);
+  font-weight: 400;
+  margin: 0 auto 2.4rem;
+}
+
+@media only screen and (--mobile-viewport) {
+  .headline {
+    font-size: var(--headlineFontSizeSmall);
+    line-height: var(--headlineLineHeightSmall);
+  }
+}
+
+.subhead {
+  font-size: var(--subheadFontSizeLarge);
+  line-height: var(--subheadLineHeightLarge);
+  font-weight: 300;
+  margin: 0 0 2.4rem;
+  @media (--mobile-viewport) {
+    font-size: var(--subheadFontSizeSmall);
+    line-height: var(--subheadLineHeightSmall);
+  }
+}
+
+.claimContainer {
+  background: var(--testimonialBlue);
+  padding-bottom: 8rem;
+}
+
+.claimBackContainer {
+  max-width: 144rem;
+  margin: 0 auto;
+  padding: 0 2.4rem;
+}
+
+.claimBackButton {
+  display: inline-block;
+  padding: 0.8rem 1.6rem;
+  text-decoration: none;
+}
+
+.claimBackButtonContent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  & svg {
+    height: 4.8rem;
+    width: 4.8rem;
+  }
+}
+
+.buttonCopy {
+  text-decoration: none;
+  color: var(--primaryDark);
+  margin-left: -0.8rem;
+}
+
+.claimTile {
+  margin: 2.4rem 0;
+  background: var(--white);
+  padding: 2.4rem;
+  border-radius: 0.4rem;
+  box-shadow: 0 3px 5px -1px rgb(177 187 217 / 20%), 0 1px 18px 0 rgb(177 187 217 / 12%), 0 6px 10px 0 rgb(177 187 217 / 14%);
+  &>div:last-child {
+    padding-bottom: 0.8rem;
+  }
+}
+
+.claimSeparator {
+  width: calc(100% + 4.8rem);
+  margin: 0 -2.4rem 2.4rem;
+  border-bottom: 0.1rem solid #d4d5d7;
+}
+
+a {
+  color: var(--primaryDark);
+  font-weight: 400;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+p {
+  margin: 0.8rem 0;
+}
+
+.claimHeadlineContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2.4rem;
+}
+
+.claimHeadline {
+  margin: 0;
+  font-size: var(--fontSizeTitle);
+  line-height: var(--lineHeightTitle);
+}
+
+.claimTrackerHeadline {
+  margin: 0;
+  font-weight: 300;
+  font-size: var(--subheadFontSizeLarge);
+  line-height: var(--subheadLineHeightLarge);
+}
+
+.paginationContainer {
+  display: flex;
+  justify-content: space-evenly;
+  margin: -0.8rem 0;
+}
+
+.pagination {
+  list-style-type: none;
+  display: flex;
+  gap: 2.4rem;
+  padding-left: 0;
+  margin: 0;
+  & .pageItem {
+    display: block;
+    height: 1.6rem;
+    width: 1.6rem;
+    border-radius: 50%;
+    background-color: var(--primary);
+    &.active {
+      background-color: var(--primaryDark);
+    }
+  }
+}
+
+.claimRow {
+  padding-bottom: 2.4rem;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1;
+  flex-wrap: wrap;
+  position: relative;
+  &> :not(:last-child) {
+    margin-right: 0.8rem;
+  }
+}
+
+@media only screen and (--mobile-viewport) {
+  .claimRow {
+    flex-direction: column;
+    &> :not(:last-child) {
+      margin-right: 0;
+      padding-bottom: 2.4rem;
+    }
+  }
+}
+
+.rowButtonContainer {
+  display: flex;
+  align-items: flex-end;
+}
+
+.claimButton {
+  min-width: 16rem;
+  & svg {
+    margin: 0 0.8rem 0 -0.8rem;
+    width: 2rem;
+    height: 2rem;
+  }
+  &> :not(:last-child) {
+    margin-right: 0;
+    padding-bottom: 2.4rem;
+  }
+  & .iconRight {
+    position: absolute;
+    right: 0;
+    margin-right: 2.4rem;
+    height: 1.6rem;
+    width: 1.6rem;
+    color: var(--primary);
+  }
+}
+
+.mainButtonContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  @media (--mobile-viewport) {
+    justify-content: space-between;
+  }
+  & .claimButton {
+    @media (--mobile-viewport) {
+      margin: 0 auto 2.4rem;
+    }
+    @media (--mini-viewport) {
+      width: 100%;
+    }
+  }
+  & .claimButton:not(:last-child) {
+    margin-right: 2.4rem;
+    @media (--mobile-viewport) {
+      margin-right: auto;
+    }
+  }
+}
+
+.claimProgressGrid {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: start;
+  grid-gap: 1.6rem;
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 1.6rem;
+    left: 2rem;
+    bottom: 0;
+    height: calc(100% - 5rem);
+    border-left: 0.2rem solid var(--greyMid);
+  }
+  & .iconContainer {
+    background-color: var(--greyMid);
+    &.complete {
+      background-color: var(--primary);
+    }
+    &.inProgress {
+      background-color: var(--primaryDark);
+    }
+  }
+}
+
+@media only screen and (--tablet-viewport) {
+  .claimProgressGrid {
+    grid-gap: 2.4rem;
+    & .claimProgressGrid {
+      grid-gap: 1.2rem;
+      &::before {
+        height: calc(100% - 4rem);
+      }
+    }
+  }
+}
+
+.iconContainer {
+  color: var(--white);
+  border-radius: 50%;
+  width: 4rem;
+  height: 4rem;
+  margin-top: 1.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-color: var(--primaryDark);
+}
+
+.claimProgressTile {
+  background: var(--white);
+  padding: 2.4rem;
+  border-radius: 0.4rem;
+  box-shadow: 0 3px 5px -1px rgb(177 187 217 / 20%), 0 1px 18px 0 rgb(177 187 217 / 12%), 0 6px 10px 0 rgb(177 187 217 / 14%);
+}
+
+.claimProgressSeparator {
+  width: calc(100% + 4.8rem);
+  margin: 2.4rem -2.4rem;
+  border-bottom: 0.1rem solid #d4d5d7;
+}
+
+.claimProgressTile p {
+  margin: 0.8rem 0;
+}
+
+.claimProgressHeadlineContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.claimProgressHeadline {
+  margin: 0;
+  font-size: var(--fontSizeTitle);
+  line-height: var(--lineHeightTitle);
+}
+
+.claimProgressSubhead {
+  font-weight: 600;
+}

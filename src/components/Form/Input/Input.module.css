@@ -1,0 +1,24 @@
+.claimField {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  flex: 1 1;
+  & .claimLabel {
+    font-size: var(--fontSizeSmall);
+    font-weight: 600;
+  } 
+  & .claimInput {
+    padding: 0.8rem;
+    border: 2px solid var(--greyMid);
+    border-radius: 0.4rem;
+  }
+  & .claimInput[type="text"] {
+    line-height: 2rem;
+  }
+  & .claimInputHalf {
+    border: 2px solid var(--greyMid);
+    border-radius: 0.4rem;
+    padding: 0.8rem;
+    width: 50%;
+  }
+}

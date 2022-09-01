@@ -1,0 +1,17 @@
+.claimField {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  flex: 1 1;
+  & .claimLabel {
+    font-size: var(--fontSizeSmall);
+    font-weight: 600;
+  } 
+  & .claimTextArea {
+    padding: 0.8rem;
+    border: 2px solid var(--greyMid);
+    border-radius: 0.4rem;
+    min-height: 9.6rem;
+    resize: none;
+  }
+}
